@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-  <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-      <div id="error"></div>
-      <div class="contact-form">
-        <form id="contact-form" method="post" action="">
-        <input type="text" name="name" class="form-control" placeholder="Your Name" minlength = "4" required>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div id="error"></div>
+  <div class="contact-form">
+    <form id="contact-form" method="post" action="">
+      <form id="contact-form" method="post" action="data.php" name="register">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" minlength="4" required>
         <br>
         <input type="email" name="email" class="form-control" placeholder="Your Email" required>
         <br>
-        
-        <input type="text" name="title" class="form-control" placeholder="Title" >
-        <br>
-          <textarea name="message" class="form-control" placeholder="Message" rows="8" cols="80" minlength = "20" ></textarea>
-          <br>
-          <input class="form-control" style="background-color: rgb(46, 92, 219)" type="submit"  value="SEND MESSAGE" > 
-          
-        </form>
 
-      <!-- <footer>
-        <object type="text/html" data="contact.html" width="1700" height="700"> </object>
-      </footer> -->
-      </div>
-  </body>
+        <input type="text" name="title" class="form-control" placeholder="Title">
+        <br>
+        <textarea name="message" class="form-control" placeholder="Message" rows="8" cols="80"
+          minlength="20"></textarea>
+        <br>
+        <input class="form-control" style="background-color: rgb(46, 92, 219)" type="submit" value="SEND MESSAGE">
+
+      </form>
+  </div>
+</body>
+
 </html>
